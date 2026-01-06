@@ -1,34 +1,24 @@
-import Navigation from './components/Navigation';
 import HeroSection from './components/HeroSection';
-import EducationSection from './components/EducationSection';
-import ExperienceSection from './components/ExperienceSection';
-import PublicationsSection from './components/PublicationsSection';
-import AwardsSection from './components/AwardsSection';
 import ProjectsSection from './components/ProjectsSection';
+import Particles from './components/Particles';
 import './App.css';
 
 function App() {
   return (
     <div className="app">
-      <Navigation />
+      <Particles />
+      <div className="background-patterns">
+        <div className="pattern pattern-top-right"></div>
+        <div className="pattern pattern-bottom-right"></div>
+      </div>
       <main>
-        <HeroSection />
-        <div className="two-column-section">
-          <div className="column-left">
-            <EducationSection />
-            <AwardsSection />
-          </div>
-          <div className="column-right">
-            <ExperienceSection />
-          </div>
+        <div className="main-container">
+          <HeroSection />
+          <ProjectsSection />
         </div>
-        <PublicationsSection />
-        <ProjectsSection />
       </main>
       <footer className="footer">
-        <div className="footer-content">
-          <p>Copyright © {new Date().getFullYear()} William Cardoso Barbosa. All Rights Reserved.</p>
-        </div>
+        <p>William Cardoso Barbosa - All rights reserved © {new Date().getFullYear()}</p>
       </footer>
     </div>
   );

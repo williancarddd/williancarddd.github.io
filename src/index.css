@@ -39,8 +39,7 @@ a {
 }
 
 a:hover {
-  color: #0052a3;
-  text-decoration: underline;
+  color: #ff7a00;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -52,12 +51,10 @@ p {
   color: #333;
 }
 
-/* Scroll suave */
 html {
   scroll-behavior: smooth;
 }
 
-/* Seleção de texto */
 ::selection {
   background-color: #b3d9ff;
   color: #000;
